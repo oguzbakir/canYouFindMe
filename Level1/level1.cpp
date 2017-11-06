@@ -18,7 +18,7 @@ int main() {
     char keyToEncrypt = '0'; //Our key that to used in encryption
 
     for(int i = 0; i < toEncrypt.size(); i++)  //For every char in toEncrypt string
-        toEncrypt[i] ^= keyToEncrypt;
+        toEncrypt[i] ^= keyToEncrypt; // Making binary XOR calculation with key and replacing result same location on string
     cout << "Encrypted message = " << toEncrypt << endl;
 
     for(int i = 0; i < toEncrypt.size(); i++) //Decrypting string to be sure it is correctly encrypted
